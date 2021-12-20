@@ -27,7 +27,7 @@ class AuthentecationViewController: UIViewController {
         viewModel.loginStatusSubject.bind { success in
             switch success {
             case true:
-                self.statusLable.text = "Welcom Alaa ... 😍"
+                self.statusLable.text = "Welcom Mahmoud ... 😍"
                 print("Welcom Mahmoud ... 😍")
             case false:
                 print("Invalied Credintials ... 😱")
