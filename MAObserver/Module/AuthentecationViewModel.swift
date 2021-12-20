@@ -14,9 +14,10 @@ class AuthentecationViewModel {
     init() {}
     
     func login(with email: String, password: String) {
-        NetworkManager.shared.login(with: email, password: password){ [weak self] success in
-            guard let self = self else {return}
-            self.loginStatusSubject.value = success ?? false
-        }
+        NetworkManager.shared.login(with: email, password: password)
+            .bind { [weak self] success in
+                guard let self = self else {return}
+                self.loginStatusSubject.value = success 
+            }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Authentecation.swift
+//  AuthentecationViewController.swift
 //  MAObserver
 //
 //  Created by Mahmoud Abdul-wahab on 20/12/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Authentecation: UIViewController {
+class AuthentecationViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
