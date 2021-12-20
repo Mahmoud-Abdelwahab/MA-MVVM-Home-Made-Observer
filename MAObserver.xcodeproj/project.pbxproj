@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		0BA70E4B2770AAF3002249D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E4A2770AAF3002249D9 /* AppDelegate.swift */; };
 		0BA70E4D2770AAF3002249D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E4C2770AAF3002249D9 /* SceneDelegate.swift */; };
-		0BA70E4F2770AAF3002249D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E4E2770AAF3002249D9 /* ViewController.swift */; };
+		0BA70E4F2770AAF3002249D9 /* Authentecation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E4E2770AAF3002249D9 /* Authentecation.swift */; };
 		0BA70E522770AAF3002249D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA70E502770AAF3002249D9 /* Main.storyboard */; };
 		0BA70E542770AAF4002249D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA70E532770AAF4002249D9 /* Assets.xcassets */; };
 		0BA70E572770AAF4002249D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA70E552770AAF4002249D9 /* LaunchScreen.storyboard */; };
 		0BA70E622770AAF4002249D9 /* MAObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E612770AAF4002249D9 /* MAObserverTests.swift */; };
 		0BA70E6C2770AAF4002249D9 /* MAObserverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E6B2770AAF4002249D9 /* MAObserverUITests.swift */; };
 		0BA70E6E2770AAF4002249D9 /* MAObserverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E6D2770AAF4002249D9 /* MAObserverUITestsLaunchTests.swift */; };
+		0BA70E7D2770BC55002249D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E7C2770BC55002249D9 /* NetworkManager.swift */; };
+		0BA70E7F2770BEB0002249D9 /* AuthentecationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E7E2770BEB0002249D9 /* AuthentecationViewModel.swift */; };
+		0BA70E822770C0AB002249D9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA70E812770C0AB002249D9 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		0BA70E472770AAF3002249D9 /* MAObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA70E4A2770AAF3002249D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BA70E4C2770AAF3002249D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0BA70E4E2770AAF3002249D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BA70E4E2770AAF3002249D9 /* Authentecation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentecation.swift; sourceTree = "<group>"; };
 		0BA70E512770AAF3002249D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BA70E532770AAF4002249D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA70E562770AAF4002249D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		0BA70E672770AAF4002249D9 /* MAObserverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAObserverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA70E6B2770AAF4002249D9 /* MAObserverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAObserverUITests.swift; sourceTree = "<group>"; };
 		0BA70E6D2770AAF4002249D9 /* MAObserverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAObserverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BA70E7C2770BC55002249D9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0BA70E7E2770BEB0002249D9 /* AuthentecationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentecationViewModel.swift; sourceTree = "<group>"; };
+		0BA70E812770C0AB002249D9 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		0BA70E492770AAF3002249D9 /* MAObserver */ = {
 			isa = PBXGroup;
 			children = (
+				0BA70E802770C09E002249D9 /* Utilities */,
+				0BA70E7B2770BC41002249D9 /* Network */,
+				0BA70E7A2770AED2002249D9 /* Module */,
 				0BA70E4A2770AAF3002249D9 /* AppDelegate.swift */,
 				0BA70E4C2770AAF3002249D9 /* SceneDelegate.swift */,
-				0BA70E4E2770AAF3002249D9 /* ViewController.swift */,
 				0BA70E502770AAF3002249D9 /* Main.storyboard */,
 				0BA70E532770AAF4002249D9 /* Assets.xcassets */,
 				0BA70E552770AAF4002249D9 /* LaunchScreen.storyboard */,
@@ -125,6 +133,31 @@
 				0BA70E6D2770AAF4002249D9 /* MAObserverUITestsLaunchTests.swift */,
 			);
 			path = MAObserverUITests;
+			sourceTree = "<group>";
+		};
+		0BA70E7A2770AED2002249D9 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70E4E2770AAF3002249D9 /* Authentecation.swift */,
+				0BA70E7E2770BEB0002249D9 /* AuthentecationViewModel.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		0BA70E7B2770BC41002249D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70E7C2770BC55002249D9 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0BA70E802770C09E002249D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0BA70E812770C0AB002249D9 /* Observable.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA70E4F2770AAF3002249D9 /* ViewController.swift in Sources */,
+				0BA70E7F2770BEB0002249D9 /* AuthentecationViewModel.swift in Sources */,
+				0BA70E4F2770AAF3002249D9 /* Authentecation.swift in Sources */,
+				0BA70E7D2770BC55002249D9 /* NetworkManager.swift in Sources */,
 				0BA70E4B2770AAF3002249D9 /* AppDelegate.swift in Sources */,
+				0BA70E822770C0AB002249D9 /* Observable.swift in Sources */,
 				0BA70E4D2770AAF3002249D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
