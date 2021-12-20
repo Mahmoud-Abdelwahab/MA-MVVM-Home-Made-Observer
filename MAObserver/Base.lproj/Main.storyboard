@@ -45,10 +45,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNAuthorized" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pen-Wj-Dn4">
+                                <rect key="frame" x="140.5" y="144" width="133" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Pen-Wj-Dn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2zx-gB-CaB"/>
+                            <constraint firstItem="Pen-Wj-Dn4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="577-cf-cfy"/>
                             <constraint firstItem="smF-4j-Yq3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JW1-fz-me0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smF-4j-Yq3" secondAttribute="trailing" constant="20" id="V7w-jL-jVY"/>
                             <constraint firstItem="smF-4j-Yq3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="e1N-TT-SfP"/>
@@ -57,6 +65,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="glW-ra-hKj" id="Gdj-08-onN"/>
                         <outlet property="passwordTextField" destination="9ic-CD-t0C" id="NrX-se-HzC"/>
+                        <outlet property="statusLable" destination="Pen-Wj-Dn4" id="5eu-DR-6iK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,6 +76,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

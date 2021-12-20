@@ -9,6 +9,7 @@ import UIKit
 
 class AuthentecationViewController: UIViewController {
 
+    @IBOutlet weak var statusLable: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
 
@@ -26,9 +27,11 @@ class AuthentecationViewController: UIViewController {
         viewModel.loginStatusSubject.bind { success in
             switch success {
             case true:
+                self.statusLable.text = "Welcom Alaa ... 😍"
                 print("Welcom Mahmoud ... 😍")
             case false:
                 print("Invalied Credintials ... 😱")
+                self.statusLable.text = "Invalied Credintials ... 😱"
             }
         }
                   
